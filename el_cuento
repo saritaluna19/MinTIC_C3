@@ -1,6 +1,6 @@
 Clase 11-09-21
 
-Palabras: celulares, equipo, desarrollo,estudiar, computador, internet
+Palabras: celulares, equipo, desarrollo, estudiar, computador, internet, planeta, loro, aguila, libro
 
 Párrafo1 Leonardo
 
@@ -29,7 +29,11 @@ por los humanos, quienes regulaban todo.
 Afortunadamente pudieron evadir los sistemas de detección y poner en linea toda su red de semillas y agua.
 
 Párrafo5 Yovany
+<<<<<<< HEAD
 
 Un águila quería llegar a un planeta lejano Donde había luz e internet y podía estudiar desarrollo de celulares a través de un computador, por lo cual 
+=======
+Un águila quería llegar a un planeta lejano donde había luz e internet y podía estudiar desarrollo de celulares a través de un computador, por lo cual 
+>>>>>>> a976dbb4464ef366b99d769984a5a2582b2f7001
 decidió emprender ese largo viaje y empacó maletas, entre sus pertenencias llevaba agua, frutas para comer y un loro para que le fuera hablando durante 
 el viaje.
