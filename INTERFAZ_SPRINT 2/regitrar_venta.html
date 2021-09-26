@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="regVentas_style.css" rel="stylesheet">
+    <script src="registrar_Ventas.js"></script>
+    <title>Registrar ventas</title>
+</head>
+<body>
+    <h1 id=titulo>REGISTRO DE VENTAS</h1>
+    <fieldset style="width:30cm; height: 3.5cm; margin:auto; background-color: #F4EEE8;">
+        <legend >DATOS DE VENTAS</legend>
+        <label for="ID_Venta" id="txt_ID_Venta">ID Venta:</label>
+        <input type="number" name="ID_Venta" size="30" id="ID_Venta"></br>
+
+        <label for="fecha_venta" id="txt_fecha_venta">Fecha de venta:</label>
+        <input type="date" name="fecha_venta" size="30" id="fecha_venta"></br>
+
+        <label for="ID_Vendedor" id="txt_id_vendedor">ID Vendedor:</label>
+        <input type="number" name="ID_Vendedor" size="30" id="ID_Vendedor"></br>
+
+        <label for="ID_Cliente" id="txt_id_cliente">ID Cliente:</label>
+        <input type="number" name="ID_Cliente" size="30" id="ID_Cliente"></br>
+
+        <label for="name_Cliente" id="txt_name_cliente">Nombre (s) Cliente:</label>
+        <input type="text" name="name_Cliente" size="30" id="name_Cliente"></br>
+    </fieldset>  <br> 
+    <fieldset style="width:30cm; height: 3.5cm; margin:auto; background-color: #F4EEE8;">
+        <legend >DATOS DE PRODUCTO</legend>
+        <label for="id_producto" id="txt_id_producto">ID Producto:</label>
+        <input type="number" name="id_producto" size="30" id="id_producto"></br>
+
+        <label for="cant_producto" id="txt_cant_producto">Cantidad producto:</label>
+        <input type="number" name="cant_producto" size="30" id="cant_producto"></br>
+
+        <label for="precio_unidad" id="txt_precio_unidad">Precio unitario: </label>
+        <input type="number" name="precio_unidad" size="30" id="precio_unidad"></br>
+
+        <button id="btn_producto" onclick="registrar()">Agregar producto</button>
+    </fieldset></br>
+
+    <table border cellpadding=8 cellspacing=0; VALIGN=middle>
+        <thead>
+           <th bgcolor="325288">ID Producto</th>
+           <th bgcolor="325288">Cantidad</th>
+           <th bgcolor="325288">Precio unitario</th>
+           <th  bgcolor="325288">Eliminar</th>
+       </thead>
+       <tbody id="datos_producto">
+
+       </tbody>
+     </table> </br>
+
+     <label for="valor_total" id="txt_valor_total">VALOR TOTAL: </label>
+     <input type="number" name="valor_total" size="30" id="valor_total"></br>
+
+     <button id="btn_cancelar">Cancelar venta</button>
+
+     <button id="btn_registrar" >Registrar venta</button>
+
+     <button id="volver_menu">Menú principal</button>
+
+     <button id="consultar_venta">Consultar ventas</button>
+
+
+</body> </br>
+</html>
