@@ -1,0 +1,275 @@
+#titulo{
+    text-align: center;
+}
+
+#btn_producto{
+    background-color: #085394;
+    color: white;
+    position: absolute;
+    width: 140px;
+    height: 45px;
+    left: 790px;
+    top: 340px;
+    border-radius: 10px;
+}
+#btn_producto:hover{
+    background-color: #F5CEBE;
+    color: black;
+}
+
+table{
+    font-size: 17px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(97, 93, 93);
+    position: absolute;
+    text-align: center;
+    background-color: #F4EEE8;
+    top:450px;
+    left: 400px;
+    border: 2px solid #000;
+    width: 600px;
+}
+
+/*DATOS DE VENTA*/
+
+#txt_ID_Venta{
+    
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: absolute;
+    width: 170px;
+    height: 20px;
+    left: 130px;
+    top: 125px;
+}
+
+#ID_Venta{
+    background-color: white;
+    position: absolute;
+    width: 170px;
+    height: 20px;
+    left: 210px;
+    top: 125px;
+}
+
+#txt_fecha_venta{
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: absolute;
+    width: 170px;
+    height: 20px;
+    left: 500px;
+    top: 125px;
+}
+
+#fecha_venta{
+    background-color: white;
+    position: absolute;
+    width: 170px;
+    height: 20px;
+    left: 620px;
+    top: 125px;
+}
+
+#txt_id_vendedor{
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: absolute;
+    width: 170px;
+    height: 20px;
+    left: 900px;
+    top: 125px;
+}
+
+#ID_Vendedor{
+    background-color: white;
+    position: absolute;
+    width: 170px;
+    height: 20px;
+    left: 1010px;
+    top: 125px;
+}
+
+#txt_id_cliente{
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: absolute;
+    width: 170px;
+    height: 20px;
+    left: 320px;
+    top: 180px;
+}
+
+#ID_Cliente{
+    background-color: white;
+    position: absolute;
+    width: 170px;
+    height: 20px;
+    left: 410px;
+    top: 180px;
+}
+
+#txt_name_cliente{
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: absolute;
+    width: 170px;
+    height: 20px;
+    left: 680px;
+    top: 180px;
+}
+
+#name_Cliente{
+    background-color: white;
+    position: absolute;
+    width: 170px;
+    height: 20px;
+    left: 830px;
+    top: 180px;
+}
+
+/*DATOS DE PRODUCTO*/
+
+#txt_id_producto{
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: absolute;
+    width: 170px;
+    height: 20px;
+    left: 320px;
+    top: 300px;
+}
+
+#id_producto{
+    background-color: white;
+    position: absolute;
+    width: 170px;
+    height: 20px;
+    left: 420px;
+    top: 300px;
+}
+
+#txt_cant_producto{
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: absolute;
+    width: 170px;
+    height: 20px;
+    left: 680px;
+    top: 300px;
+}
+
+#cant_producto{
+    background-color: white;
+    position: absolute;
+    width: 170px;
+    height: 20px;
+    left: 830px;
+    top: 300px;
+}
+
+#txt_precio_unidad{
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: absolute;
+    width: 170px;
+    height: 20px;
+    left: 320px;
+    top: 350px;
+}
+
+#precio_unidad{
+    background-color: white;
+    position: absolute;
+    width: 170px;
+    height: 20px;
+    left: 440px;
+    top: 350px;
+}
+
+/*VALOR TOTAL*/
+
+#txt_valor_total{
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: absolute;
+    width: 170px;
+    height: 20px;
+    left: 470px;
+    top: 673px;
+}
+
+#valor_total{
+    background-color: white;
+    position: absolute;
+    width: 180px;
+    height: 20px;
+    left: 590px;
+    top: 670px;
+}
+
+/*BOTONES DE VENTA*/
+#btn_cancelar{
+background-color: #085394;
+color: white;
+position: absolute;
+width: 140px;
+height: 50px;
+left: 450px;
+top: 750px;
+border-radius: 10px;
+}
+
+#btn_cancelar:hover{
+background-color: #F5CEBE;
+color: black;
+}
+
+#btn_registrar{
+    background-color: #085394;
+    color: white;
+    position: absolute;
+    width: 140px;
+    height: 50px;
+    left: 780px;
+    top: 750px;
+    border-radius: 10px;
+}
+    
+#btn_registrar:hover{
+    background-color: #F5CEBE;
+    color: black;
+}
+
+#volver_menu{
+    background-color: #114E60;
+    color: white;
+    position: absolute;
+    width: 140px;
+    height: 50px;
+    left: 200px;
+    top: 850px;
+    border-radius: 10px;
+    }
+    
+#volver_menu:hover{
+    background-color: #F5CEBE;
+    color: black;
+}
+    
+
+#consultar_venta{
+    background-color: #114E60;
+    color: white;
+    position: absolute;
+    width: 140px;
+    height: 50px;
+    left: 1000px;
+    top: 850px;
+    border-radius: 10px;
+    }
+    
+#consultar_venta:hover{
+    background-color: #F5CEBE;
+    color: black;
+}
