@@ -1,0 +1,241 @@
+#titulo{
+    text-align: center;
+}
+
+table{
+    font-size: 17px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(42, 42, 42);
+    position: absolute;
+    text-align: center;
+    background-color: #F4EEE8;
+    top:430px;
+    left: 180px;
+    border: 2px solid #000;
+    width: 600px;
+}
+
+/*DATOS DE USUARIO*/
+
+#txt_id_usuario{
+    
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: absolute;
+    width: 170px;
+    height: 20px;
+    left: 200px;
+    top: 125px;
+}
+
+#id_usuario{
+    background-color: white;
+    position: absolute;
+    width: 250px;
+    height: 20px;
+    left: 350px;
+    top: 125px;
+}
+
+#txt_contraseña{
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: absolute;
+    width: 170px;
+    height: 20px;
+    left: 750px;
+    top: 125px;
+}
+
+#contraseña{
+    background-color: white;
+    position: absolute;
+    width: 241px;
+    height: 15px;
+    left: 900px;
+    top: 125px;
+}
+
+#txt_sel_rol{
+    
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: absolute;
+    width: 170px;
+    height: 20px;
+    left: 200px;
+    top: 180px;
+}
+
+#sel_rol{
+    background-color: white;
+    position: absolute;
+    width: 250px;
+    height: 20px;
+    left: 350px;
+    top: 180px;
+}
+
+#txt_estado_usuario{
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: absolute;
+    width: 170px;
+    height: 20px;
+    left: 750px;
+    top: 180px;
+}
+
+#sel_estado{
+    background-color: white;
+    position: absolute;
+    width: 250px;
+    height: 20px;
+    left: 900px;
+    top: 180px;
+}
+
+/*DATOS BÁSICOS*/
+
+#txt_nombre_usuario{
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: absolute;
+    width: 170px;
+    height: 20px;
+    left: 200px;
+    top: 300px;
+}
+
+#nombre_usuario{
+    background-color: white;
+    position: absolute;
+    width: 241px;
+    height: 15px;
+    left: 350px;
+    top: 300px;
+}
+
+#txt_no_identificacion{
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: absolute;
+    width: 170px;
+    height: 20px;
+    left: 750px;
+    top: 300px;
+}
+
+#no_identificacion{
+    background-color: white;
+    position: absolute;
+    width: 241px;
+    height: 15px;
+    left: 900px;
+    top: 300px;
+}
+
+#txt_no_telefono{
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: absolute;
+    width: 170px;
+    height: 20px;
+    left: 200px;
+    top: 355px;
+}
+
+#no_telefono{
+    background-color: white;
+    position: absolute;
+    width: 241px;
+    height: 15px;
+    left: 350px;
+    top: 355px;
+}
+
+#txt_correo_electronico{
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: absolute;
+    width: 170px;
+    height: 20px;
+    left: 750px;
+    top: 355px;
+}
+
+#correo_electronico{
+    background-color: white;
+    position: absolute;
+    width: 241px;
+    height: 15px;
+    left: 900px;
+    top: 355px;
+}
+
+
+/*BOTONES DE USUARIOS*/
+#btn_buscar{
+background-color: #085394;
+color: white;
+position: absolute;
+width: 140px;
+height: 50px;
+left: 450px;
+top: 800px;
+border-radius: 10px;
+}
+
+#btn_buscar:hover{
+background-color: #F5CEBE;
+color: black;
+}
+
+#btn_nuevo{
+    background-color: #085394;
+    color: white;
+    position: absolute;
+    width: 140px;
+    height: 50px;
+    left: 780px;
+    top: 800px;
+    border-radius: 10px;
+}
+    
+#btn_nuevo:hover{
+    background-color: #F5CEBE;
+    color: black;
+}
+
+#btn_regresar{
+    background-color: #114E60;
+    color: white;
+    position: absolute;
+    width: 140px;
+    height: 50px;
+    left: 100px;
+    top: 800px;
+    border-radius: 10px;
+    }
+    
+#btn_regresar:hover{
+    background-color: #F5CEBE;
+    color: black;
+}
+    
+
+#btn_guardar{
+    background-color: #114E60;
+    color: white;
+    position: absolute;
+    width: 140px;
+    height: 50px;
+    left: 1100px;
+    top: 800px;
+    border-radius: 10px;
+    }
+    
+#btn_guardar:hover{
+    background-color: #F5CEBE;
+    color: black;
+}

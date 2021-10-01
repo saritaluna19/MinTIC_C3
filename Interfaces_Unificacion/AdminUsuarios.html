@@ -111,7 +111,7 @@
     <button id="btn_buscar" onclick="buscar()">Buscar</button>
     <button id="btn_nuevo" onclick="nuevo()" >Nuevo</button>
     <button id="btn_guardar" onclick="guardar()">Guardar</button>
-    <table border cellpadding=8 cellspacing=0; VALIGN=middle>
+    <table id="d_usuarios" border cellpadding=8 cellspacing=0; VALIGN=middle>
         <thead>
            <th bgcolor="325288"; style="color:bisque">ID Usuario</th>
            <th bgcolor="325288"; style="color:bisque">Rol Usuario</th>
@@ -121,59 +121,57 @@
            <th bgcolor="325288"; style="color:bisque">No. Teléfono</th>
            <th bgcolor="325288"; style="color:bisque">Email</th>
            <th bgcolor="325288"; style="color:bisque">Seleccionar</th>
-           <tr>
-               <td>fzapata</td>
-               <td>Administrador</td>
-               <td>Autorizado</td>
-               <td>Fabian Zapata</td>
-               <td>1032420628</td>
-               <td>3138832810</td>
-               <td>fabianza@outlook.com</td>
-               <td><input type="checkbox" id="seleccionar1" onChange="seleccionar()"></td>
-           </tr>
-           <tr>
-                <td>sluna</td>
-                <td>Vendedor</td>
-                <td>Autorizado</td>
-                <td>Sarita Luna</td>
-                <td>1006948919</td>
-                <td>3118093072</td>
-                <td>saritaluna19@gmail.com</td>
-                <td><input type="checkbox" id="seleccionar2" onChange="seleccionar()"></td>
-            </tr>
-            <tr>
-                <td>lruiz</td>
-                <td>Vendedor</td>
-                <td>Pendiente</td>
-                <td>Lina Ruiz</td>
-                <td>1152205919</td>
-                <td>3126924618</td>
-                <td>lruiz@gmail.com</td>
-                <td><input type="checkbox" id="seleccionar3" onChange="seleccionar()"></td>
-            </tr>
-            <tr>
-                <td>lbarrera</td>
-                <td>Vendedor</td>
-                <td>No Autorizado</td>
-                <td>Leonardo Barrera</td>
-                <td>79915918</td>
-                <td>3112160734</td>
-                <td>lbarrera@gmail.com</td>
-                <td><input type="checkbox" id="seleccionar4" onChange="seleccionar()"></td>
-            </tr>
-            <tr>
-                <td>ybejarano</td>
-                <td>Vendedor</td>
-                <td>Pendiente</td>
-                <td>Yovany Bejarano</td>
-                <td>79967358</td>
-                <td>3155262690</td>
-                <td>ybejarano@gmail.com</td>
-                <td><input type="checkbox" id="seleccionar5" onChange="seleccionar()"></td>
-            </tr>
        </thead>
-       <tbody id="datos_usuarios">
-
+       <tbody>
+        <tr id='1'>
+            <td>fzapata</td>
+            <td>Administrador</td>
+            <td>Autorizado</td>
+            <td>Fabian Zapata</td>
+            <td>1032420628</td>
+            <td>3138832810</td>
+            <td>fabianza@outlook.com</td>
+            <td><input type="checkbox" id="seleccionar1" onclick="seleccionar(1)"></td>
+        </tr>
+        <tr id='2'>
+             <td>sluna</td>
+             <td>Vendedor</td>
+             <td>Autorizado</td>
+             <td>Sarita Luna</td>
+             <td>1006948919</td>
+             <td>3118093072</td>
+             <td>saritaluna19@gmail.com</td>
+             <td><input type="checkbox" id="seleccionar2" onclick="seleccionar(2)"></td>
+         </tr>
+         <tr id='3'>
+             <td>lruiz</td>
+             <td>Vendedor</td>
+             <td>Pendiente</td>
+             <td>Lina Ruiz</td>
+             <td>1152205919</td>
+             <td>3126924618</td>
+             <td>lruiz@gmail.com</td>
+             <td><input type="checkbox" id="seleccionar3" onclick="seleccionar(3)"></td>
+         </tr>
+         <tr id='4'>
+             <td>lbarrera</td>
+             <td>Vendedor</td>
+             <td>No Autorizado</td>
+             <td>Leonardo Barrera</td>
+             <td>79915918</td>
+             <td>3112160734</td>
+             <td>lbarrera@gmail.com</td>
+             <td><input type="checkbox" id="seleccionar4" onclick="seleccionar(4)"></td>
+         </tr>
+         <tr id='5'>
+             <td>ybejarano</td>
+             <td>Vendedor</td>
+             <td>Pendiente</td>
+             <td>Yovany Bejarano</td>
+             <td>79967358</td>
+             <td>3155262690</td>
+             <td>ybejarano@gmail.com</td>
+             <td><input type="checkbox" id="seleccionar5" onclick="seleccionar(5)"></td>
        </tbody>
      </table> </br>
 

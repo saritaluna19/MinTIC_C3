@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="Nombre de la empresa" />
+	<meta name="keywords" content="nombre, empresa" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="IE=11" />
+    <title>Registrar ventas</title>
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="CSS/Custom_Responsive.css" />
+    <link rel="stylesheet" href="CSS/Style.css" />
+	<!--Menu-->
+    <link rel="stylesheet" href="CSS/Menu/normalize.min.css">
+    <link rel="stylesheet" href="CSS/Menu/defaults.min.css">
+    <link rel="stylesheet" href="CSS/Menu/nav-core.min.css">
+    <link rel="stylesheet" href="CSS/Menu/nav-layout.min.css">
+    <!--[if lt IE 9]>
+    <link rel="stylesheet" href="CSS/Menu/ie8-core.min.css">
+    <link rel="stylesheet" href="CSS/Menu/ie8-layout.min.css">
+    <script src="JS/Menu/html5shiv.min.js"></script>
+    <![endif]-->
+    <script src="JS/Menu/rem.min.js"></script>
+    <!--Fin Menu-->
+	
+
+	<script type="text/javascript">
+		function alertar(texto) { alert(texto); }
+	</script>
+</head>
+<body>
+	<div class="Header" title="Nombre de la empresa">
+	    <div class="Header_Logo" title="Los borbotones">
+		    <a href="http://www.empresa.gov.co"><img class="Logo" src="Imagenes/Logo.png" alt="Los borbotones"></a>
+	    </div>
+	    <div class="NameSite" >
+		    &nbsp;
+	    </div>
+	</div>
+	<div class="clear"></div>
+	
+	<!--Menu-->
+    <div class="Menu">
+        <a href="#" class="nav-button">Menu</a>
+        <nav class="nav">
+            <ul>
+		        <li><a href="#">Login</a></li>
+				<li class="nav-submenu"><a href="#">Administrar</a>
+					<ul>
+						<li><a href="#">Usuarios</a></li>
+						<li><a href="Vendedores.html">Vendedores</a></li>
+						<li><a href="RegistrarVenta.html">Ventas</a></li>
+					</ul>
+				</li>
+				<li class="nav-submenu"><a href="#">Consultas</a>
+					<ul>
+						<li><a href="#">Ventas</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+
+		<a href="#" class="nav-close">Close Menu</a>
+    </div>
+    <!--Fin menu-->
+
+	<div class="content">
+		<div class="container">
+			<form id="form1">
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" >
+						<div class="centrar">
+							<span class="headline-l-govco">Registro de ventas</span>
+						</div>
+					</div>
+				</div>
+				<div class="clear10"></div>
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" >
+						<div class="left">
+							<span class="headline-m-govco">Datos de ventas</span>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6" >
+						<label for="IDVenta">ID Venta:</label><br />
+						<input class="form-control" type="number" id="Text_IDVenta" name="IDVenta" required minlength="4" maxlength="30" size="30" autocomplete="off" >
+					</div>
+					<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6" >
+						<label for="FechaVenta">Fecha de venta:</label><br />
+						<input class="form-control" type="date" id="Txt_FechaIngreso" name="FechaVenta" required minlength="10" maxlength="10" size="10" placeholder="AAAA-MM-DD" pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}" autocomplete="off">
+					</div>
+				</div>
+				<div class="clear10"></div>
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6" >
+						<label for="ID_Vendedor">ID Vendedor:</label><br />
+						<input class="form-control" type="number" id="Txt_IDVendedor" name="ID_Vendedor" required minlength="10" maxlength="30" size="30" autocomplete="off">
+					</div>
+					<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6" >
+						<label for="ID_Cliente">ID Cliente:</label><br />
+						<input class="form-control" type="number" id="Txt_IDCliente" name="ID_Cliente" required minlength="4" maxlength="30" size="30" autocomplete="off" >
+					</div>
+				</div>
+				<div class="clear10"></div>
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" >
+						Nombre Cliente
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3" >
+						<input class="form-control" type="text" id="Text_PrimerApellido" name="PrimerApellido" placeholder="Primer apellido" required minlength="4" maxlength="30" size="30" autocomplete="off" >
+					</div>
+					<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3" >
+						<input class="form-control" type="text" id="Txt_SegundoApellido" name="SegundoApellido" placeholder="Segundo apellido" required minlength="4" maxlength="30" size="30" autocomplete="off">
+					</div>
+					<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3" >
+						<input class="form-control" type="text" id="Txt_PrimerNombre" name="PrimerNombre" placeholder="Primer nombre" required minlength="4" maxlength="30" size="30" autocomplete="off">
+					</div>
+					<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3" >
+						<input class="form-control" type="text" id="Txt_SegundoNombre" name="SegundoNombre" placeholder="Segundo nombre" required minlength="4" maxlength="30" size="30" autocomplete="off">
+					</div>
+				</div>
+				<div class="clear10"></div>
+				<br />
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" >
+						<div class="left">
+							<span class="headline-m-govco">Datos de producto</span>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4" >
+						<label for="ID_Producto" id="Lbl_IDProducto">ID Producto:</label><br />
+						<input class="form-control" type="number" id="Txt_IDProducto" name="ID_Producto" required minlength="10" maxlength="30" size="30" autocomplete="off">
+					</div>
+					<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4" >
+						<label for="Txt_CantidadProducto" >Cantidad producto:</label><br />
+						<input class="form-control" type="number" id="Txt_IDProducto" name="Txt_CantidadProducto" required minlength="10" maxlength="30" size="30" autocomplete="off">
+					</div>
+					<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4" >
+						<label for="Txt_PrecioUnidad">Precio unitario:</label><br />
+						<input class="form-control" type="number" id="Txt_PrecioUnidad" name="Txt_PrecioUnidad" required minlength="10" maxlength="30" size="30" autocomplete="off">
+					</div>
+				</div>
+				<div class="clear10"></div>
+				<br />
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" >
+						<div class="centrar">
+							<input class="botonPregunta" id="Btn_Producto" type="button" value="Agregar producto" onclick="registrar()">
+						</div>
+					</div>
+				</div>
+				<div class="clear10"></div>
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" >
+						<table border cellpadding="8" cellspacing="0" VALIGN="middle" width="100%">
+							<thead>
+								<th style=" color:#fff;" bgcolor="325288">ID Producto</th>
+								<th bgcolor="325288">Cantidad</th>
+								<th bgcolor="325288">Precio unitario</th>
+								<th bgcolor="325288">Eliminar</th>
+							</thead>
+							<tbody id="datos_producto">
+
+							</tbody>
+						</table> 
+					</div>
+				</div>
+				<div class="clear10"></div>
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" >
+						<label for="valor_total">Valor total: </label>
+						<input class="form-control" type="number" id="Txt_ValorTotal" name="valor_total" required minlength="10" maxlength="30" size="30" autocomplete="off">
+					</div>
+				</div>
+				<div class="clear10"></div>
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6" >
+						<div class="centrar">
+							<input class="botonPregunta" id="Btn_Cancelar" type="button" value="Cancelar venta">
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6" >
+						<div class="centrar">
+							<input class="botonPregunta" id="Btn_Registrar" type="button" value="Registrar venta">
+						</div>
+					</div>
+				</div>
+				<div class="clear10"></div>
+			</form>
+		</div>
+	</div>
+
+	<div class="footer">
+	    <div class="contenf">
+		    <div class="contentfooterizq left">
+			    <strong>Conmutador:</strong> +57(1) 222 3344 - Central de fax: +57(1) 222 4455<br />
+			    <strong>Punto de atención presencial:</strong> Carrera 21 No. 44-55 piso 12, Bogotá<br />
+			    En Bogotá: +57(1) 222 3345 Resto del país: 018000951244<br /><br />
+			    <strong>Horario de atención:</strong> Lunes a Viernes de 7:00 a.m. a 9:00 p.m. y sábados de 8:00 a.m. a 1:00 p.m. en jornada continua.<br />
+			    <br/><br/>
+		    </div>
+		    <div class="contentfooterder left">
+		        <div class="itemR">
+				    <a alt="PQRSD" title="PQRSD" href="https://www.empresa.com/" target="_blank">Solicitudes, sugerencias y reclamos</a>&nbsp;
+				    <a alt="PQRSD" title="PQRSD" href="https://www.empresa.com/" target="_blank"><img src="imagenes/Sobre.jpg" alt="PQRSD" title="PQRSD"/></a>
+			    </div>
+			    <a href="https://www.empresa.com/" target="_blank" title="Terminos y condiciones">Términos y condiciones de uso.</a><br />
+		        <br/><br/>
+			    <div class="compartir">
+                    <div class="itemR"><a id="facebookEnlace" title="Ingresar a Facebook MinSaludCol" href="https://www.facebook.com/Empresa" target="_blank"><img style=" border-style:none; " src="Imagenes/Facebook.png" alt="Ingresar a Facebook Empresa" title="Ingresar a Facebook Empresa" /></a></div>
+                    <div class="itemR"><a id="twitterEnlace" title="Ingresar a Twitter" href="https://twitter.com/Empresa"><img style=" border-style:none; " src="Imagenes/Twitter.png" alt="Ingresar a Twitter Empresa" title="Ingresar a Twitter Empresa"/></a></div>
+				    <div class="itemR"><a title="Ingresar a YouTube" href="https://www.youtube.com/Empresa" target="_blank"><img src="imagenes/YouTube.png" alt="Ingresar a YouTube Empresa" title="Ingresar a YouTube Empresa" /></a></div>
+				    <div class="itemR"><a title="Ingresar a Instagram" href="https://instagram.com/Empresa/" target="_blank"><img src="imagenes/Instagram.png" alt="Ingresar a Instagram Empresa" title="Ingresar a Instagram Empresa" /></a></div>
+				    <div class="itemR"><a title="Ingresar a Linkedin" href="https://www.linkedin.com/Empresa/" target="_blank"><img src="imagenes/in.jpg" alt="Ingresar a Linkedin Empresa" title="Ingresar a Linkedin Empresa" /></a></div>
+				    <div class="itemR"><a title="Ingresar a servicio RSS" href="https://www.empresa.com/rss.aspx" target="_blank"><img src="imagenes/RSS.png" alt="Ingresar a servicio RSS" title="Ingresar a servicio RSS" /></a></div>
+				    <div class="clear"></div>
+			    </div>
+		    </div>
+	    </div>
+	    <div class="clear"></div>
+    </div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="JS/Menu/nav.jquery.min.js"></script>
+    <script>
+        $('.nav').nav();
+    </script>
+</body>
+</html>
