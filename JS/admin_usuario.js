@@ -17,11 +17,10 @@ function nuevo(){
     document.getElementById("Txt_Identificacion").value = "";
     document.getElementById("Txt_Telefono").value = "";
     document.getElementById("Txt_correo_electronico").value = "";
-    document.getElementById("seleccionar1").checked = false
-    document.getElementById("seleccionar2").checked = false
-    document.getElementById("seleccionar3").checked = false
-    document.getElementById("seleccionar4").checked = false
-    document.getElementById("seleccionar5").checked = false
+    var y = document.getElementById("d_usuarios").rows.length + 1;
+    for (var i = 1; i < y; i++) {
+        document.getElementById("seleccionar"+i).checked = false
+     }
     document.getElementById("Text_ID_Usuario").focus();
 }
 function buscar(){
