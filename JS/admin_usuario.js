@@ -1,9 +1,8 @@
 function seleccionar(x){ 
-    document.getElementById("seleccionar1").checked = false
-    document.getElementById("seleccionar2").checked = false
-    document.getElementById("seleccionar3").checked = false
-    document.getElementById("seleccionar4").checked = false
-    document.getElementById("seleccionar5").checked = false
+    var y = document.getElementById("d_usuarios").rows.length + 1;
+    for (var i = 1; i < y; i++) {
+        document.getElementById("seleccionar"+i).checked = false
+     }
     document.getElementById("seleccionar"+x).checked = true
 };
 function nuevo(){
