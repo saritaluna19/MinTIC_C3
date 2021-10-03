@@ -6,7 +6,7 @@
 	<meta name="keywords" content="Los, borbotones" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Los borbotones - Consulta de ventas</title>
+    <title>Los borbotones - Registro de productos</title>
 	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="CSS/Custom_Responsive.css" />
@@ -46,13 +46,13 @@
 						<li><a href="Usuarios.html">Usuarios</a></li>
 						<li><a href="Vendedores.html">Vendedores</a></li>
 						<li><a href="Ventas.html">Ventas</a></li>
-						<li><a href="Productos.html">Ventas</a></li>
+                        <li><a href="Productos.html">Productos</a></li>
 					</ul>
 				</li>
 				<li class="nav-submenu"><a href="#">Consultas</a>
 					<ul>
 						<li><a href="ConsultaVentas.html">Ventas</a></li>
-						<li><a href="ConsultaProductos.html">Ventas</a></li>
+						<li><a href="ConsultaProductos.html">Productos</a></li>
 					</ul>
 				</li>
 				<li><a href="Login.html">Cerrar sesión</a></li>
@@ -69,100 +69,88 @@
 				<div class="row">
 					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" >
 						<div class="centrar">
-							<span class="headline-l-govco">Consulta de ventas</span>
+							<span class="headline-l-govco">Registro de productos</span>
 						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6" >
-						<label for="FechaInicial">Fecha inicial:</label><br />
-						<input class="form-control" type="date" id="Text_FechaInicial" name="FechaInicial" required minlength="10" maxlength="10" size="10" placeholder="AAAA-MM-DD" pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}" autocomplete="off" >
-					</div>
-					<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6" >
-						<label for="FechaFinal">Fecha final:</label><br />
-						<input class="form-control" type="date" id="Txt_FechaFinal" name="FechaFinal" required minlength="10" maxlength="10" size="10" placeholder="AAAA-MM-DD" pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}" autocomplete="off">
-					</div>
-				</div>
-				<div class="clear10"></div>
-				<div class="row">
-					<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6" >
-						<label for="IDVenta">ID venta:</label><br />
-						<input class="form-control" type="number" id="Txt_IDVenta" name="IDVenta" required minlength="10" maxlength="30" size="30" autocomplete="off">
-					</div>
-					<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6" >
-						<label for="Producto">Producto:</label><br />
-						<select class="form-control" name="Producto">
-							<option value="value1" selected>Seleccione...</option>
-							<option value="value2">Producto 1</option>
-							<option value="value3">Producto 2</option>
-							<option value="value3">Producto 3</option>
-						</select>
 					</div>
 				</div>
 				<div class="clear10"></div>
 				<div class="row">
 					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" >
-						<div class="centrar">
-							<input class="botonPregunta" id="Btn_ConsultarVenta" type="button" value="Consultar venta" onclick="alertar('Consulta realizada correctamente');">
+						<div class="left">
+							<span class="headline-m-govco">Datos de productos</span>
 						</div>
 					</div>
 				</div>
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6" >
+						<label for="IDProducto">ID producto:</label><br />
+						<input class="form-control" type="number" id="Text_IDProductoR" name="IDProducto" required minlength="4" maxlength="30" size="30" autocomplete="off" >
+					</div>
+					<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6" >
+						<label for="Descripcion">Descripción:</label><br />
+						<input class="form-control" type="text" id="Txt_Descripcion" name="Descripcion" required minlength="10" maxlength="100" size="10" autocomplete="off">
+					</div>
+				</div>
+				<div class="clear10"></div>
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6" >
+						<label for="ValorUnitario">Valor unitario:</label><br />
+						<input class="form-control" type="number" id="Txt_ValorUnitario" name="ValorUnitario" required minlength="10" maxlength="30" size="30" autocomplete="off">
+					</div>
+					<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6" >
+						<label for="Cantidad">Cantidad:</label><br />
+						<input class="form-control" type="number" id="Txt_Cantidad" name="Cantidad" required minlength="1" maxlength="10000" size="30" autocomplete="off" >
+					</div>
+				</div>
+				<div class="clear10"></div>
+                <div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6" >
+						<label for="Estado" id="Lbl_Estado">Estado producto:</label>
+						<select class="form-control" name="Estado" size="1" id="DD_Estado" onChange="javascript:alert('Estado seleccionado');"> 
+							<option value="" selected>Seleccione...</option>
+							<option value="Disponible">Disponible</option>
+							<option value="No disponible">No disponible</option> 
+						</select>
+					</div>
+				</div>				
+				<div class="clear10"></div>
+				<br />
 				<div class="clear10"></div>
 				<div class="row">
 					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" >
 						<table>
 							<thead>
-								<th>Producto</th>
-								<th>Descripción</th>
-								<th>Valor total</th>
-								<th>Fecha pedido</th>
-								<th>Estado</th>
+								<tr>
+									<th>ID producto</th>
+									<th>Cantidad</th>
+									<th>Precio unitario</th>
+									<th>Descripción</th>
+									<th>Estado</th>
+								</tr>
 							</thead>
-							<tbody id="datos_producto">
+							<tbody id="registro_producto">
 								<tr>
-									<td>Producto 1</td>
-									<td>Descripción</td>
+									<td>526</td>
+									<td>10</td>
 									<td>5000</td>
-									<td>2021-10-01</td>
-									<td>
-										<select class="form-control" name="Producto">
-											<option value="value1" selected>Seleccione...</option>
-											<option value="value2">Abierta</option>
-											<option value="value3">Cerrada</option>
-											<option value="value3">Cancelada</option>
-										</select>
-									</td>
-								</tr>
-								<tr>
-									<td>Producto 2</td>
-									<td>Descripción</td>
-									<td>8000</td>
-									<td>2021-10-02</td>
-									<td>
-										<select class="form-control" name="Producto">
-											<option value="value1">Seleccione...</option>
-											<option value="value2" selected>Abierta</option>
-											<option value="value3">Cerrada</option>
-											<option value="value3">Cancelada</option>
-										</select>
-									</td>
-								</tr>
-								<tr>
-									<td>Producto 3</td>
-									<td>Descripción</td>
-									<td>3000</td>
-									<td>2021-09-30</td>
-									<td>
-										<select class="form-control" name="Producto">
-											<option value="value1">Seleccione...</option>
-											<option value="value2">Abierta</option>
-											<option value="value3" selected>Cerrada</option>
-											<option value="value3">Cancelada</option>
-										</select>
-									</td>
+									<td>Articulo de cocina</td>
+                                    <td>Disponible</td>
 								</tr>
 							</tbody>
 						</table> 
+					</div>
+				</div>	
+				<div class="clear10"></div>
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6" >
+						<div class="centrar">
+							<input class="botonPregunta" id="Btn_CancelarProducto" type="button" value="Cancelar registro" onclick="alertar('Registro cancelado correctamente');" >
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6" >
+						<div class="centrar">
+							<input class="botonPregunta" id="Btn_RegistrarProducto" type="button" value="Registrar producto" onclick="registrar_productos()">
+						</div>
 					</div>
 				</div>
 				<div class="clear10"></div>
