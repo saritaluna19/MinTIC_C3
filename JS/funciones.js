@@ -12,3 +12,16 @@ function registrar_ventas(){
         btn_registrar.innerHTML=fila;
         document.getElementById("datos_producto").appendChild(btn_registrar);
 }
+
+function registrar_productos(){
+    var _id_Rproducto=document.getElementById("Text_IDProductoR").value;
+    var _Rcant=document.getElementById("Txt_Cantidad").value;
+    var _Rprecio=document.getElementById("Txt_ValorUnitario").value;
+    var _descripcion=document.getElementById("Txt_Descripcion").value;
+    var _Estado=document.getElementById("DD_Estado").value;
+
+    var fila="<tr><td>"+_id_Rproducto+"</td><td>"+_Rcant+"</td><td>"+_Rprecio+"</td><td>"+_descripcion+"</td><td>"+_Estado+"</td>";
+    var btn_registrarProducto=document.createElement("tr");
+        btn_registrarProducto.innerHTML=fila;
+        document.getElementById("registro_producto").appendChild(btn_registrarProducto);
+}
