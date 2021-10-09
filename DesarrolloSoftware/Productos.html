@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta name="description" content="Los borbotones" />
+	<meta name="keywords" content="Los, borbotones" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Los borbotones - Registro de productos</title>
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="CSS/Custom_Responsive.css" />
+    <link rel="stylesheet" href="CSS/Style.css" />
+	<!--Menu-->
+    <link rel="stylesheet" href="CSS/Menu/normalize.min.css">
+    <link rel="stylesheet" href="CSS/Menu/defaults.min.css">
+    <link rel="stylesheet" href="CSS/Menu/nav-core.min.css">
+    <link rel="stylesheet" href="CSS/Menu/nav-layout.min.css">
+    <!--[if lt IE 9]>
+    <link rel="stylesheet" href="CSS/Menu/ie8-core.min.css">
+    <link rel="stylesheet" href="CSS/Menu/ie8-layout.min.css">
+    <script src="JS/Menu/html5shiv.min.js"></script>
+    <![endif]-->
+    <script src="JS/Menu/rem.min.js"></script>
+    <!--Fin Menu-->
+	<script src="JS/funciones.js"></script>
+</head>
+<body>
+	<div class="Header" title="Los borbotones">
+	    <div class="Header_Logo" title="Los borbotones">
+		    <a href="http://www.losborbotones.com"><img class="Logo" src="Imagenes/Logo.png" alt="Los borbotones"></a>
+	    </div>
+	    <div class="NameSite" >
+		    &nbsp;
+	    </div>
+	</div>
+	<div class="clear"></div>
+	
+	<!--Menu-->
+    <div class="Menu">
+        <a href="#" class="nav-button">Menu</a>
+        <nav class="nav">
+            <ul>
+				<li class="nav-submenu"><a href="#">Administrar</a>
+					<ul>
+						<li><a href="Usuarios.html">Usuarios</a></li>
+						<li><a href="Vendedores.html">Vendedores</a></li>
+						<li><a href="Ventas.html">Ventas</a></li>
+                        <li><a href="Productos.html">Productos</a></li>
+					</ul>
+				</li>
+				<li class="nav-submenu"><a href="#">Consultas</a>
+					<ul>
+						<li><a href="ConsultaVentas.html">Ventas</a></li>
+						<li><a href="ConsultaProductos.html">Productos</a></li>
+					</ul>
+				</li>
+				<li><a href="Login.html">Cerrar sesión</a></li>
+			</ul>
+		</nav>
+
+		<a href="#" class="nav-close">Close Menu</a>
+    </div>
+    <!--Fin menu-->
+
+	<div class="content">
+		<div class="container">
+			<form id="form1">
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" >
+						<div class="centrar">
+							<span class="headline-l-govco">Registro de productos</span>
+						</div>
+					</div>
+				</div>
+				<div class="clear10"></div>
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" >
+						<div class="left">
+							<span class="headline-m-govco">Datos de productos</span>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6" >
+						<label for="IDProducto">ID producto:</label><br />
+						<input class="form-control" type="number" id="Text_IDProductoR" name="IDProducto" required minlength="4" maxlength="30" size="30" autocomplete="off" >
+					</div>
+					<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6" >
+						<label for="Descripcion">Descripción:</label><br />
+						<input class="form-control" type="text" id="Txt_Descripcion" name="Descripcion" required minlength="10" maxlength="100" size="10" autocomplete="off">
+					</div>
+				</div>
+				<div class="clear10"></div>
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6" >
+						<label for="ValorUnitario">Valor unitario:</label><br />
+						<input class="form-control" type="number" id="Txt_ValorUnitario" name="ValorUnitario" required minlength="10" maxlength="30" size="30" autocomplete="off">
+					</div>
+					<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6" >
+						<label for="Cantidad">Cantidad:</label><br />
+						<input class="form-control" type="number" id="Txt_Cantidad" name="Cantidad" required minlength="1" maxlength="10000" size="30" autocomplete="off" >
+					</div>
+				</div>
+				<div class="clear10"></div>
+                <div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6" >
+						<label for="Estado" id="Lbl_Estado">Estado producto:</label>
+						<select class="form-control" name="Estado" size="1" id="DD_Estado" onChange="javascript:alert('Estado seleccionado');"> 
+							<option value="" selected>Seleccione...</option>
+							<option value="Disponible">Disponible</option>
+							<option value="No disponible">No disponible</option> 
+						</select>
+					</div>
+				</div>				
+				<div class="clear10"></div>
+				<br />
+				<div class="clear10"></div>
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" >
+						<table>
+							<thead>
+								<tr>
+									<th>ID producto</th>
+									<th>Cantidad</th>
+									<th>Precio unitario</th>
+									<th>Descripción</th>
+									<th>Estado</th>
+								</tr>
+							</thead>
+							<tbody id="registro_producto">
+								<tr>
+									<td>526</td>
+									<td>10</td>
+									<td>5000</td>
+									<td>Articulo de cocina</td>
+                                    <td>Disponible</td>
+								</tr>
+							</tbody>
+						</table> 
+					</div>
+				</div>	
+				<div class="clear10"></div>
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6" >
+						<div class="centrar">
+							<input class="botonPregunta" id="Btn_CancelarProducto" type="button" value="Cancelar registro" onclick="alertar('Registro cancelado correctamente');" >
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6" >
+						<div class="centrar">
+							<input class="botonPregunta" id="Btn_RegistrarProducto" type="button" value="Registrar producto" onclick="registrar_productos()">
+						</div>
+					</div>
+				</div>
+				<div class="clear10"></div>
+			</form>
+		</div>
+	</div>
+
+	<div class="footer">
+	    <div class="contenf">
+		    <div class="contentfooterizq left">
+			    <strong>Conmutador:</strong> +57(1) 222 3344 - Central de fax: +57(1) 222 4455<br />
+			    <strong>Punto de atención presencial:</strong> Carrera 21 No. 44-55 piso 12, Bogotá<br />
+			    En Bogotá: +57(1) 222 3345 Resto del país: 018000951244<br /><br />
+			    <strong>Horario de atención:</strong> Lunes a Viernes de 7:00 a.m. a 9:00 p.m. y sábados de 8:00 a.m. a 1:00 p.m. en jornada continua.<br />
+			    <br/><br/>
+		    </div>
+		    <div class="contentfooterder left">
+		        <div class="itemR">
+				    <a alt="PQRSD" title="PQRSD" href="https://www.empresa.com/" target="_blank">Solicitudes, sugerencias y reclamos</a>&nbsp;
+				    <a alt="PQRSD" title="PQRSD" href="https://www.empresa.com/" target="_blank"><img src="imagenes/Sobre.jpg" alt="PQRSD" title="PQRSD"/></a>
+			    </div>
+			    <a href="https://www.empresa.com/" target="_blank" title="Terminos y condiciones">Términos y condiciones de uso.</a><br />
+		        <br/><br/>
+			    <div class="compartir">
+                    <div class="itemR"><a id="facebookEnlace" title="Ingresar a Facebook MinSaludCol" href="https://www.facebook.com/Empresa" target="_blank"><img style=" border-style:none; " src="Imagenes/Facebook.png" alt="Ingresar a Facebook Empresa" title="Ingresar a Facebook Empresa" /></a></div>
+                    <div class="itemR"><a id="twitterEnlace" title="Ingresar a Twitter" href="https://twitter.com/Empresa"><img style=" border-style:none; " src="Imagenes/Twitter.png" alt="Ingresar a Twitter Empresa" title="Ingresar a Twitter Empresa"/></a></div>
+				    <div class="itemR"><a title="Ingresar a YouTube" href="https://www.youtube.com/Empresa" target="_blank"><img src="imagenes/YouTube.png" alt="Ingresar a YouTube Empresa" title="Ingresar a YouTube Empresa" /></a></div>
+				    <div class="itemR"><a title="Ingresar a Instagram" href="https://instagram.com/Empresa/" target="_blank"><img src="imagenes/Instagram.png" alt="Ingresar a Instagram Empresa" title="Ingresar a Instagram Empresa" /></a></div>
+				    <div class="itemR"><a title="Ingresar a Linkedin" href="https://www.linkedin.com/Empresa/" target="_blank"><img src="imagenes/in.jpg" alt="Ingresar a Linkedin Empresa" title="Ingresar a Linkedin Empresa" /></a></div>
+				    <div class="itemR"><a title="Ingresar a servicio RSS" href="https://www.empresa.com/rss.aspx" target="_blank"><img src="imagenes/RSS.png" alt="Ingresar a servicio RSS" title="Ingresar a servicio RSS" /></a></div>
+				    <div class="clear"></div>
+			    </div>
+		    </div>
+	    </div>
+	    <div class="clear"></div>
+    </div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="JS/Menu/nav.jquery.min.js"></script>
+    <script>
+        $('.nav').nav();
+    </script>
+</body>
+</html>
