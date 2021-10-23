@@ -14,7 +14,7 @@ class App extends Component {
     }
 
     fetchProductos(){
-        fetch('api/tasks/RegistrarProductos')
+        fetch('api/tasks/ConsultarProductos')
             .then(res=>res.json())
             .then(data=>{
                 this.setState({productos: data });
@@ -27,24 +27,24 @@ class App extends Component {
     }
 
     buscarProducto(IDProducto) {
-        fetch(`/api/tasks/RegistrarProductos/${IDProducto}`)
+        fetch(`/api/tasks/ConsultarProductos/${IDProducto}`)
             .then(res => res.json())
             .then(data => {
                 console.log(data)
-                this.setState({
-                    IDProducto: data.IDProducto,
-                    Descripcion: data.Descripcion,
-                    ValorUnitario: data.ValorUnitario,
-                    Cantidad: data.Cantidad,
-                    Estado: data.Estado,
-                    _id: data._id
-                })
+                componentDidMount(this.setState({productos: data }));
             });
     }
 
+    buscarProducto(Descripcion) {
+        fetch(`/api/tasks/ConsultarProductos/${Descripcion}`)
+            .then(res => res.json())
+            .then(data => {
+                console.log(data)
+                componentDidMount(this.setState({productos: data }));
+            });
+    }
 
     nuevoProducto() {
-        fetch('/api/tasks/RegistrarProductos')
                 this.setState({
                     IDProducto:'',
                     Descripcion:'',
@@ -103,7 +103,7 @@ class App extends Component {
 
                 <div class="content">
                     <div class="container">
-                        <form id="form1" onSubmit={this.buscarProducto2}>
+                        <form id="form1">
                             <div class="row">
                                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" >
                                     <div class="centrar">
@@ -113,29 +113,31 @@ class App extends Component {
                             </div>
                             <div class="row">
                                 <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6" >
-                                    <label for="IDVenta">ID producto:</label><br />
-                                    <input class="form-control" value={this.state.IDProducto} type="number" id="Txt_IDVenta" onChange={this.handleChange} name="IDProducto" maxlength="30" size="30" autocomplete="off"/>
+                                    <label for="IDProducto">ID producto:</label><br />
+                                    <input class="form-control" type="number" id="Txt_IDProducto" name="IDProducto" maxlength="30" size="30" autocomplete="off"/>
                                 </div>
                                 <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6" >
                                     <label for="Descripcion">Descripción:</label><br />
-						            <input class="form-control" value={this.state.Descripcion} type="text" id="Txt_Descripcion" onChange={this.handleChange} name="Descripcion" maxlength="100" size="10" autocomplete="off"/>
+						            <input class="form-control" type="text" id="Txt_Descripcion" name="Descripcion" maxlength="100" size="10" autocomplete="off"/>
                                 </div>
                             </div>
                             <div class="clear10"></div>
                             <div class="row">
                                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" >
                                     <div class="centrar">
-                                    <button class="botonPregunta" id="btn_nuevo" onClick={() => this.nuevoProducto2()}> 
+                                    <button class="botonPregunta" id="btn_nuevo" onClick={() => this.nuevoProducto()}> 
                                     <i className="material-icons">Limpiar campos</i>
                                     </button>						    
-							        <button class="botonPregunta" type="submit" id="btn_buscar" > Buscar Producto </button>
+							        <button class="botonPregunta" id="btn_buscar" onClick={() => this.buscarProducto(document.getElementById("Txt_IDProducto").value)}> 
+                                    <i className="material-icons">Buscar Producto</i>
+                                    </button>
                                     </div>
                                 </div>
                             </div>
                             <div class="clear10"></div>
                             <div class="row">
                                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" >
-                                <table>
+                                <table id="d_productos">
                                         <thead>
                                             <th>ID producto</th>
                                             <th>Cantidad</th>
@@ -143,7 +145,7 @@ class App extends Component {
                                             <th>Descripción</th>
                                             <th>Estado</th>
                                         </thead>
-                                        <tbody id="d_productos">
+                                        <tbody>
                                         { 
                                                 this.state.productos.map(task=>{
                                                         return(

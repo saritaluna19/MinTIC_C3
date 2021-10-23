@@ -13,8 +13,18 @@ router.get('/RegistrarProductos/:id', async(req,res)=>{
     res.json(productos);
 })
 
-router.get('/RegistrarProductos/:IDproducto', async(req,res)=>{
-    const productos= await Productos.findByName(req.params.IDProducto);
+router.get('/ConsultarProductos/', async (req, res) => {
+    const productos = await Productos.find();
+    res.json(productos);
+});
+
+router.get('/ConsultarProductos/:IDproducto', async(req,res)=>{
+    const productos= await Productos.find({"IDproducto":req.params.IDproducto});
+    res.json(productos);
+})
+
+router.get('/ConsultarProductos/:Descripcion', async(req,res)=>{
+    const productos= await Productos.find({"Descripcion":req.params.Descripcion});
     res.json(productos);
 })
 
